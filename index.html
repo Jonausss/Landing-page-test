@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG World</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="topnav">
+        <ul>
+                <li class="left"><a href="" class="main">RPG World</a></li>
+                <li class="left"><a href="">Find game</a></li>
+                <li class="left"><a href="">Products</a></li>
+                <li class="left"><a href="">Comunity</a></li>
+                <li class="right"><a href="" class="button">Sign up</a></li>
+                <li class="right"><a href="">Sign in</a></li>
+        </ul>
+    </div>
+    <div class="main-section carousel">
+            <div class="background">
+                <div class="block"></div>
+                <img src="Sprites/Dragon icon.png" alt="">
+            </div>
+            <div class="contents">
+                <div class="left-side">
+                    <h1>RPG World</h1>
+                    <p>The biggest site focused on RPG community and market with the best prices ever. Get in and join to fans like you!</p>
+                </div>
+                <div class="right-side">
+                    <img src="Sprites/Dnd Handbook.png" alt="">
+                    <a class="button" href="">Join our community!</a>
+                </div>
+                <div class="rotate-indicatory">
+                </div>
+            </div>
+    </div>
+    <div class="description-section">
+            <div class="functional-dices">
+                <div id="d20" class="dice" onclick="RollDice(20)">
+                    <img id="d20Img" src="Sprites/d20 icon.png" alt="">
+                    <span id="d20Text">20</span>
+                </div>
+                <div id="d12" class="dice" onclick="Teste()">
+                    <img id="d12Img" src="Sprites/d12 Icon.png" alt="">
+                    <span id="d12Text">12</span>
+                </div>
+                <div id="d8" class="dice" onclick="Teste()">
+                    <img id="d8Img" src="Sprites/d8 icon.png" alt="">
+                    <span id="d8Text">8</span>
+                </div>
+                <div id="d6" class="dice" onclick="Teste()">
+                    <img id="d6Img" src="Sprites/d6 icon.png" alt="">
+                    <span id="d6Text">6</span>
+                </div>
+                <div id="d4" class="dice" onclick="Teste()">
+                    <img id="d4Img" src="Sprites/d4 icon.png" alt="">
+                    <span id="d4Text">4</span>
+                </div>
+            </div>
+            <p>Tabletop RPG (role playing game) is a game to play with others persons, where one will be the DM (Dungeon Master), who describe 
+                the cenary, narrative and characters, and the others will be the players, who witch one will interpret your own characters. Like 
+                a live and playable book, super fun!
+            </p>
+    </div>
+    <div class="products-section">
+        <h1>Our products</h1>
+        <div class="product-div">
+            <div class="product-description">
+                    <h2>Green dice set</h2>
+                    <p>Made by the greatest dwarven ironsmiths using forest's magic, garenteeing better rolls to you.</p>
+            </div>
+            <div class="products-carousel">
+                    <img src="Sprites/Product green dices.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="questions-section">
+        <div class="questions">   
+            <div class="questions-title">
+                <h1>Frequent questions</h1>
+            </div>
+            <div class="questions-table">
+                <table>
+                    <tr>
+                        <th><span>I need friends to play RPG?</span><a class="button">></a></th>
+                        <th><span>What is a RPG's system</span><a class="button">></a></th>
+                        <th><span>Whitch system is better to start?</span><a class="button">></a></th>
+                        <th id="last-th"><span>I need to pay to access the contents of the site?</span><a class="button">></a></th>
+                    </tr>
+                </table>
+            </div>
+        </div> 
+        <p>Your question is not here? <span class="button">Contact us</span></p>
+    </div>
+    <div class="copyright-section">
+            <p>Copyright &copy; 2023 RPG World All rights reserved</p>
+    </div>
+</body>
+</html> 
