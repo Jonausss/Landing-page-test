@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RPG World</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="script.js"></script>
 </head>
 <body>
@@ -30,9 +31,7 @@
                 </div>
                 <div class="right-side">
                     <img src="Sprites/Dnd Handbook.png" alt="">
-                    <a class="button" href="">Join our community!</a>
-                </div>
-                <div class="rotate-indicatory">
+                    <a class="button unselectable" href="">Join our community!</a>
                 </div>
             </div>
     </div>
@@ -42,19 +41,19 @@
                     <img id="d20Img" src="Sprites/d20 icon.png" alt="">
                     <span id="d20Text">20</span>
                 </div>
-                <div id="d12" class="dice" onclick="Teste()">
+                <div id="d12" class="dice" onclick="RollDice(12)">
                     <img id="d12Img" src="Sprites/d12 Icon.png" alt="">
                     <span id="d12Text">12</span>
                 </div>
-                <div id="d8" class="dice" onclick="Teste()">
+                <div id="d8" class="dice" onclick="RollDice(8)">
                     <img id="d8Img" src="Sprites/d8 icon.png" alt="">
                     <span id="d8Text">8</span>
                 </div>
-                <div id="d6" class="dice" onclick="Teste()">
+                <div id="d6" class="dice" onclick="RollDice(6)">
                     <img id="d6Img" src="Sprites/d6 icon.png" alt="">
                     <span id="d6Text">6</span>
                 </div>
-                <div id="d4" class="dice" onclick="Teste()">
+                <div id="d4" class="dice" onclick="RollDice(4)">
                     <img id="d4Img" src="Sprites/d4 icon.png" alt="">
                     <span id="d4Text">4</span>
                 </div>
@@ -65,16 +64,19 @@
             </p>
     </div>
     <div class="products-section">
+
         <h1>Our products</h1>
         <div class="product-div">
             <div class="product-description">
-                    <h2>Green dice set</h2>
-                    <p>Made by the greatest dwarven ironsmiths using forest's magic, garenteeing better rolls to you.</p>
+                <h3>(new!)</h2>
+                <h2>Green dice set</h2>
+                <p>Made by the greatest dwarven ironsmiths using forest's magic, garenteeing better rolls to you.</p>
             </div>
             <div class="products-carousel">
-                    <img src="Sprites/Product green dices.png" alt="">
+                <img src="Sprites/Product green dices.png" alt="" class="item current-item">
             </div>
         </div>
+        <a href="" class="button unselectable">See more</a>
     </div>
     <div class="questions-section">
         <div class="questions">   
@@ -84,15 +86,19 @@
             <div class="questions-table">
                 <table>
                     <tr>
-                        <th><span>I need friends to play RPG?</span><a class="button">></a></th>
-                        <th><span>What is a RPG's system</span><a class="button">></a></th>
-                        <th><span>Whitch system is better to start?</span><a class="button">></a></th>
-                        <th id="last-th"><span>I need to pay to access the contents of the site?</span><a class="button">></a></th>
+                        <th class="question"><span>I need friends to play RPG?</span><a class="button unselectable" id="questionButton1" onclick="OpenAnswer(1, 3)">></a></th>
+                        <th class="answer"><span id="answer1"></span></th>
+                        <th class="question"><span>What is a RPG's system?</span><a class="button unselectable" id="questionButton2" onclick="OpenAnswer(2, 3)">></a></th>
+                        <th class="answer"><span id="answer2"></span></th>
+                        <th class="question"><span>Whitch system is better to start?</span><a class="button unselectable" id="questionButton3" onclick="OpenAnswer(3, 3)">></a></th>
+                        <th class="answer"><span id="answer3"></span></th>
+                        <th class="question"><span>I need to pay to access the contents of the site?</span><a class="button unselectable" id="questionButton4" onclick="OpenAnswer(4, 3)">></a></th>
+                        <th class="answer" id="last-th"><span id="answer4"></span></th>
                     </tr>
                 </table>
             </div>
         </div> 
-        <p>Your question is not here? <span class="button">Contact us</span></p>
+        <p>Your question is not here? <a class="button unselectable" href="">Contact us</a></p>
     </div>
     <div class="copyright-section">
             <p>Copyright &copy; 2023 RPG World All rights reserved</p>
